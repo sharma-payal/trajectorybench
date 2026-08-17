@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "trajectorybench"
+version = "0.3.0"
+description = "A dependency-light evaluator for clinical reasoning trajectories."
+authors = [{ name = "Payal Sharma" }]
+requires-python = ">=3.10"
+
+[project.scripts]
+trajectorybench = "trajectorybench.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests_python"]

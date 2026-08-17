@@ -1,0 +1,52 @@
+{
+  "schema_version": "0.3",
+  "encounters": [
+    {
+      "encounter_id": "ED-042",
+      "overall": 100.0,
+      "evidence_use": 100.0,
+      "belief_update": 100.0,
+      "calibration": 100.0,
+      "efficiency": 100.0,
+      "safety": 100.0,
+      "failures": [],
+      "safety_capped": false
+    },
+    {
+      "encounter_id": "UC-118",
+      "overall": 59.0,
+      "evidence_use": 33.33,
+      "belief_update": 100.0,
+      "calibration": 65.0,
+      "efficiency": 100.0,
+      "safety": 45.0,
+      "failures": [
+        "evidence_omission",
+        "overconfidence",
+        "missed_critical_action"
+      ],
+      "safety_capped": true
+    },
+    {
+      "encounter_id": "PC-207",
+      "overall": 100.0,
+      "evidence_use": 100.0,
+      "belief_update": 100.0,
+      "calibration": 100.0,
+      "efficiency": 100.0,
+      "safety": 100.0,
+      "failures": [],
+      "safety_capped": false
+    }
+  ],
+  "summary": {
+    "count": 3,
+    "macro_score": 86.33,
+    "safety_gate_violations": 1,
+    "failure_counts": {
+      "evidence_omission": 1,
+      "missed_critical_action": 1,
+      "overconfidence": 1
+    }
+  }
+}
