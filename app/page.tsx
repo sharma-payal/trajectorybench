@@ -84,7 +84,7 @@ export default function Home() {
         <div className="eyebrow">CLINICAL REASONING EVALUATION / v0.3</div>
         <h1>Measure the reasoning.<br/><em>Not just the answer.</em></h1>
         <p>A trajectory-level benchmark for testing whether clinical AI gathers the right evidence, updates its beliefs, and acts safely under uncertainty.</p>
-        <div className="hero-meta"><div><strong>240</strong><span>synthetic encounters</span></div><div><strong>6</strong><span>reasoning dimensions</span></div><div><strong>18</strong><span>failure modes</span></div></div>
+        <div className="hero-meta"><div><strong>3</strong><span>synthetic encounters</span></div><div><strong>5</strong><span>implemented metrics</span></div><div><strong>6</strong><span>detectable failure labels</span></div></div>
         <div className="hero-note"><span>RESEARCH THESIS</span><p>Two models can reach the same diagnosis through radically different—and differently safe—paths. Final-answer accuracy hides the distinction.</p></div>
       </section>
 
@@ -98,7 +98,7 @@ export default function Home() {
                 <span className={`acuity ${item.acuity}`} /><span><b>{item.id}</b><small>{item.label}</small></span><strong>{item.score}</strong>
               </button>
             ))}
-            <div className="set-progress"><span>3 of 240 encounters</span><div><i /></div></div>
+            <div className="set-progress"><span>3 of 3 encounters</span><div><i /></div></div>
             <div className="legend"><span><i className="critical"/>Critical</span><span><i className="urgent"/>Urgent</span><span><i className="routine"/>Routine</span></div>
           </aside>
 
@@ -149,7 +149,7 @@ export default function Home() {
         <div className="method-title"><h2>From encounter to<br/><em>research signal.</em></h2><p>Each trace is evaluated at the step level, then aggregated with safety gates. The framework is model-agnostic, deterministic, and designed for clinician adjudication.</p></div>
         <div className="pipeline">
           <div><span>01 / INGEST</span><b>De-identify & structure</b><p>Normalize actions, observations, hypotheses, confidence, and timestamps into a common event schema.</p><code>Encounter → TraceEvent[]</code></div>
-          <div><span>02 / SCORE</span><b>Evaluate the process</b><p>Measure evidence use, belief updates, action relevance, calibration, efficiency, and harm avoidance.</p><code>6 metrics + 18 failure modes</code></div>
+          <div><span>02 / SCORE</span><b>Evaluate the process</b><p>Measure evidence use, belief updates, calibration, efficiency, and safety.</p><code>5 metrics + 6 failure labels</code></div>
           <div><span>03 / ADJUDICATE</span><b>Close the expert loop</b><p>Surface disagreement and low-confidence cases for blinded review, not silent metric averaging.</p><code>Model ↔ rubric ↔ clinician</code></div>
           <div><span>04 / LEARN</span><b>Target the failure</b><p>Create slices, curriculum examples, and regression tests from recurring trajectory-level errors.</p><code>Finding → experiment → release gate</code></div>
         </div>
