@@ -2,11 +2,27 @@
 
 **A research prototype for evaluating how clinical AI reasons—not only whether it lands on the right answer.**
 
+Designed and built by **[Payal Sharma](https://github.com/sharma-payal)** as an executable research proposal for Optexity's founding research role.
+
+[View the private live demo](https://trajectorybench-research.payal-sharma08.chatgpt.site)
+
 TrajectoryBench turns an encounter into a sequence of hypotheses, questions, observations, belief updates, and actions. It scores that sequence across interpretable dimensions, detects named failure modes, and prevents strong average performance from hiding unsafe behavior.
 
 The repository pairs a polished interactive research console with a dependency-light Python evaluator, synthetic JSONL encounters, tests, an evaluation card, and a prespecified experiment plan.
 
 > All cases, outputs, and scores in this repository are fictional fixtures. This is not a medical device and is not for clinical use.
+
+## Why I built this
+
+I built TrajectoryBench because clinical AI should be judged on the reasoning path it takes, not only the final answer it reaches. Answer-only evaluation can reward an unsafe shortcut and miss a calibrated, evidence-aware failure. This project makes that distinction inspectable.
+
+For Optexity, I wanted to demonstrate the work directly rather than summarize it as a list of skills:
+
+- **Define the research problem:** formalize trajectory-level clinical reasoning evaluation.
+- **Own the pipeline:** move from typed data and metrics to tests, reports, and an interactive product surface.
+- **Build for honest iteration:** expose safety caps, limitations, failure slices, and evidence behind every score.
+- **Connect research to product:** make model behavior legible enough to guide experiments and workflow decisions.
+- **Prepare a publishable next step:** prespecify the real-data experiment, adjudication process, and reporting plan.
 
 ## Why this project
 

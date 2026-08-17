@@ -1,6 +1,7 @@
 {
   "name": "trajectorybench-research-console",
   "version": "0.1.0",
+  "author": "Payal Sharma",
   "private": true,
   "engines": {
     "node": ">=22.13.0"

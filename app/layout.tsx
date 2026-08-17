@@ -13,8 +13,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "TrajectoryBench — Clinical Reasoning Evaluation",
-  description: "An open benchmark for evaluating clinical reasoning trajectories, not just final answers.",
+  title: "TrajectoryBench by Payal Sharma — Clinical Reasoning Evaluation",
+  description: "Payal Sharma's research prototype for evaluating clinical reasoning trajectories, not just final answers.",
+  authors: [{ name: "Payal Sharma", url: "https://github.com/sharma-payal" }],
+  creator: "Payal Sharma",
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",

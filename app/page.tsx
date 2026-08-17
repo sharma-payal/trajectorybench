@@ -73,7 +73,7 @@ export default function Home() {
     <main>
       <header className="topbar">
         <a className="brand" href="#top" aria-label="TrajectoryBench home">Trajectory<span>Bench</span></a>
-        <nav aria-label="Primary navigation"><a href="#benchmark">Benchmark</a><a href="#results">Results</a><a href="#method">Method</a></nav>
+        <nav aria-label="Primary navigation"><a href="#benchmark">Benchmark</a><a href="#results">Results</a><a href="#method">Method</a><a href="#author">Author</a></nav>
         <div className="context"><span className="status-dot" /> Research environment · Synthetic data</div>
         <button className="run-button" onClick={() => { setComplete(false); setRunning(true); }} disabled={running}>
           {running ? "Evaluating…" : complete ? "Run complete ✓" : "Run evaluation"} <span>↗</span>
@@ -170,7 +170,18 @@ export default function Home() {
         <pre aria-label="Example command output"><code><span>$</span> python scripts/run_benchmark.py{"\n\n"}Loaded 3 synthetic encounters{"\n"}Validated schema ........... <b>PASS</b>{"\n"}Scored 12 trace events ..... <b>PASS</b>{"\n"}Safety gate violations ..... <em>1</em>{"\n\n"}macro_score: <strong>86.33</strong>{"\n"}report: artifacts/report.json</code></pre>
       </section>
 
-      <footer><a className="brand" href="#top">Trajectory<span>Bench</span></a><p>Research prototype · Uses only fictional synthetic encounters · Not for clinical use</p><a href="#top">Back to top ↑</a></footer>
+      <section className="author-section" id="author">
+        <div className="author-index">PS / 2026</div>
+        <div>
+          <div className="eyebrow">WHY I BUILT THIS</div>
+          <h2>An executable research proposal,<br/><em>not a résumé claim.</em></h2>
+          <p>I built TrajectoryBench for Optexity’s founding research role because clinical AI should be judged on the path it takes—not only the answer it reaches. The project turns that conviction into a working, inspectable system: a typed trajectory schema, safety-gated metrics, failure analysis, synthetic fixtures, tests, and a product surface that makes every score auditable.</p>
+          <p>It reflects how I want to work: define the open question, build the smallest honest experiment, expose what the metric misses, and own the full path from research idea to usable artifact.</p>
+          <div className="author-links"><strong>Payal Sharma</strong><span>Builder & researcher</span><a href="https://github.com/sharma-payal" target="_blank" rel="noreferrer">GitHub ↗</a></div>
+        </div>
+      </section>
+
+      <footer><a className="brand" href="#top">Trajectory<span>Bench</span></a><p>Built by Payal Sharma · Fictional synthetic encounters · Not for clinical use</p><a href="#top">Back to top ↑</a></footer>
 
       {drawer && <div className="drawer-backdrop" onMouseDown={(event) => { if (event.target === event.currentTarget) setDrawer(false); }}>
         <section className="drawer" role="dialog" aria-modal="true" aria-labelledby="drawer-title">
