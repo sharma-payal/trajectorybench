@@ -6,6 +6,8 @@ Designed and built by **[Payal Sharma](https://github.com/sharma-payal)** as an 
 
 [View the private live demo](https://trajectorybench-research.payal-sharma08.chatgpt.site)
 
+Public view link - https://trajectorybench-research.payal-sharma08.chatgpt.site
+
 TrajectoryBench turns an encounter into a sequence of hypotheses, questions, observations, belief updates, and actions. It scores that sequence across interpretable dimensions, detects named failure modes, and prevents strong average performance from hiding unsafe behavior.
 
 The repository pairs a polished interactive research console with a dependency-light Python evaluator, synthetic JSONL encounters, tests, an evaluation card, and a prespecified experiment plan.
